@@ -3,6 +3,10 @@
     box-sizing: border-box;
     border: 0;
 }
+a {
+    text-decoration: none;
+    color: #000000; 
+}
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -29,7 +33,7 @@
 img {
     display: block;
     width: 100%;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .card:hover {
     box-shadow: 0px 0px 15px -6px #535758;
@@ -53,7 +57,6 @@ img {
     font-size: 24px;
 }
 .card__content p {
-    
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -61,9 +64,9 @@ img {
 }
 
 .buttons {
-    position: relative;
-    width: 100%;
     text-align: justify;
+    padding: 32px 0 0;
+    vertical-align: middle;
 }
 .buttons::after{
     content: "";
@@ -71,43 +74,46 @@ img {
     display: inline-block;
 
 }
-.buttons button {
+.buttons li {
+    box-sizing: content-box;
     display: inline-block;
     background-color: #fff;
-    min-width: 134px;
+    width: 100px;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    
-
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 14px; 
+    list-style: none;
 }
-.buttons button:hover{
-    
-}
-button:first-child{
+.buttons li:first-child{
     background-color: #C7A17A;
-    color: #fff; 
     transition: 1s; 
     font-weight: 700;
+ 
+    
 }
-button:first-child:hover{
+.buttons li:first-child a{
+    color: #fff;
+}
+.buttons li:first-child:hover{
     background-color: rgb(169, 133, 87);
     /* border: solid 1px #C7A17A; */
 }
-button{
+.buttons li{
     cursor: pointer;
-    display: inline-block;
 }
-.button__btn {
+.buttons li:last-child {
     font-weight: 700;
     transition: 1s;
     border: solid 1px transparent;
 }
-.button__btn:hover{
+.buttons li:last-child:hover{
     color: #5f5143;
     border-color: #C7A17A;
     background-color: rgb(245, 237, 227);
 }
+
+
