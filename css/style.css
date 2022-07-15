@@ -62,7 +62,6 @@ img {
     line-height: 22px;
     color: #151D28;
 }
-
 .buttons {
     text-align: justify;
     padding: 32px 0 0;
@@ -91,16 +90,13 @@ img {
 .buttons li:first-child{
     background-color: #C7A17A;
     transition: 1s; 
-    font-weight: 700;
- 
-    
+    font-weight: 700;   
 }
 .buttons li:first-child a{
     color: #fff;
 }
 .buttons li:first-child:hover{
     background-color: rgb(169, 133, 87);
-    /* border: solid 1px #C7A17A; */
 }
 .buttons li{
     cursor: pointer;
@@ -115,5 +111,3 @@ img {
     border-color: #C7A17A;
     background-color: rgb(245, 237, 227);
 }
-
-
